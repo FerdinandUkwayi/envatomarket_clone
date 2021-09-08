@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/components/hero.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/components/hamburger.css">
+    <link rel="stylesheet" href="/components/dropdown.css">
+    <link rel="stylesheet" href="/components/cursor.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh
+        }
+
+        .mobile-nav {
+            position: absolute;
+            top: 65px;
+            z-index: 1000;
+        }
+
+       
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span to="/" class="navbar-brand">
+                <i class="fab fa-typo3">envato<span class="text-success">market</span></i>
+            </span>
+            <button class="btn btn-success">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <a href="/index.html">KURT</a>
+        <div class="nav-section">
+            <div class="hamburger-wrapper" onmouseout="undoMenuTextChange()" onmouseover="changeMenuText()">
+                <div class="circle icon">
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </div>
+            </div>
+            <h5 id="menu-text">MENU</h5>
+        </div>
+    </div>
+
+    <div class="dropdownMenu closeMenu">
+        <div class="dropdown-nav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="contact">
+            <a href="#">hello@example.com</a>
+            <a href="#">(222) 123-4567</a>
+            <div>
+                121 King St, Melbourne VIC 3000,
+                Australia
+            </div>
+        </div>
+        
+    </div>
+    <main>
+        <!-- <svg width="200" height="200" viewBox="0 0 220 220" position="absolute" z-index="-5" xmlns="http://www.w3.org/2000/svg">
+                    <filter id="displacementFilter">
+                        <feTurbulence type="turbulence" baseFrequency="0.0 0.0" numOctaves="2" result="turbulence" id="turbulence" />
+                        <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="3" xChannelSelector="R" yChannelSelector="G" />
+                    </filter>
+                </svg> -->
+        <!-- <svg>
+            <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+                <feTurbulence caseFrequency="0.2 0.3" result="NOISE" numOctaves="1" id="turbulence"></feTurbulence>
+                <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
+            </filter>
+        </svg> -->
+        <div class="hero-slide slide-fade">
+            <img src="/images/image-0.png" alt="" class="hero-img">
+            <div class="hero-content d-flex justify-content-around">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex flex-column prod-text">
+                            <h3 class="desc">Visual Design</h3>
+                            <h2 class="prod-name">Golf Watch.</h2>
+                            <a href="/pages/detail.html">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-num"><span class="num-text-quote">1</span> <span id="num-text-base">/ 5</span></div>
+            </div>            
+        </div>
+
+        <div class="hero-slide slide-fade">
+            <img src="/images/image-1.png" alt="" class="hero-img">
+            <div class="hero-content d-flex justify-content-around">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex flex-column prod-text">
+                            <h3 class="desc">Visual Design</h3>
+                            <h2 class="prod-name">Golf Watch.</h2>
+                            <a href="/pages/detail.html">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-num"><span class="num-text-quote">2</span> <span id="num-text-base">/ 5</span></div>
+            </div>
+        </div>
+
+        <div class="hero-slide slide-fade">
+            <img src="/images/image-2.png" alt="" class="hero-img">
+            <div class="hero-content d-flex justify-content-around">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex flex-column prod-text">
+                            <h3 class="desc">Visual Design</h3>
+                            <h2 class="prod-name">Golf Watch.</h2>
+                            <a href="/pages/detail.html">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-num"><span class="num-text-quote">3</span> <span id="num-text-base">/ 5</span></div>
+            </div>  
+        </div>
+
+        <div class="hero-slide slide-fade">
+            <img src="/images/image-3.png" alt="" class="hero-img">
+            <div class="hero-content d-flex justify-content-around">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex flex-column prod-text">
+                            <h3 class="desc">Visual Design</h3>
+                            <h2 class="prod-name">Golf Watch.</h2>
+                            <a href="/pages/detail.html">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-num"><span class="num-text-quote">4</span> <span id="num-text-base">/ 5</span></div>
+            </div>  
+        </div>
+
+        <div class="hero-slide slide-fade">
+            <img src="/images/image-4.png" alt="" class="hero-img">
+            <div class="hero-content d-flex justify-content-around">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 d-flex flex-column prod-text">
+                            <h3 class="desc">Visual Design</h3>
+                            <h2 class="prod-name">Golf Watch.</h2>
+                            <a href="/pages/detail.html">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-num"><span class="num-text-quote">5</span> <span id="num-text-base">/ 5</span></div>
+            </div>
+        </div>
+
+        <div class="slide-nav">
+            <a onclick="newSlide(-1)" class="prev">&#10094</a>
+            <a onclick="newSlide(+1).tl.play()" class="next">&#10095</a>
+        </div>
+
+
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </main>
+
+    <div class="cursor1"></div>
+    <div class="cursor2"></div>
+
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="/components/hamburger.js"></script>
+    <script src="/components/cursor.js"></script>
+    <script src=""></script>
+    <script src="/components/hero.js"></script>
+   
+
+    <script>
+        // let el = document.getElementById("turbulence");
+            // tl = new TimelineMax({ paused: false });
+            // tl.from(el, 3, { attr: { baseFrequency: '0.03 ' } }, 0.1);
+            // tl.to(el, 3, { attr: { baseFrequency: '0.0 ' } }, 0.1);
+
+            // tl.play()
+    </script>
+</body>
+
+
+
+
+
+
+</html>

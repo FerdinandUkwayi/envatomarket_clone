@@ -1,0 +1,32 @@
+ .cursor1 {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            border: thin solid #c6c6c6;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: .15s;
+            z-index: 1000;
+        }
+
+        .cursor2 {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            border: thin solid #c6c6c6;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            transition: .12s;
+            z-index: 1000
+        }
+
+        .hamburger-wrapper:hover ~ .cursor1 {
+            transform: translate(-50%, -50%) scale(1.5);
+            background-color: #c6c6c6;
+        }

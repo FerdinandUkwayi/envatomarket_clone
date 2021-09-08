@@ -1,0 +1,47 @@
+.hamburger-wrapper {
+    
+}
+.circle {
+    width: 56px;
+    height: 56px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+    transform-origin: scale(26%)
+}
+
+.line { 
+    top: 50%;
+    position: absolute;
+    background-color: #fff;
+    height: 4px;
+    width: 70%;
+    border-radius: 3px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+
+.top {
+    top: 25%;
+}
+
+.middle {
+    top: 41%
+}
+
+.bottom{
+    top:55%
+}
+
+.icon.close .top{
+    transform: rotate(45deg);
+    top: 41%
+}
+
+.icon.close .middle, .icon.close .bottom {
+    transform: rotate(-45deg);
+    top: 41%
+}
